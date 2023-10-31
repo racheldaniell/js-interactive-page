@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page Tutorial</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- javascript file call-in here, using "defer" to make sure HTML and CSS load before JS does-->
+    
+    <script src="./main.js" defer></script>
+
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <h3>I am an interactive web page</h3>
+
+    <!-- put this in a <div> with a class so can manipulate it-->
+    <div>
+
+      <p id="no-color-text">I am some text on the page. Lots of possibilities here.</p>
+     
+    </div>
+
+    <!-- STEP 1 - make your button -->
+    <!-- give it an ID with unique naming; add "onClick" here later to make it active -->
+    <!-- STEP 2 - make a new interactive button to change text color -->
+    <!-- remember a unique ID is required -->
+    <!-- after you define your function in JS, add that exact function name to the onClick here -->
+
+    <button id='text-popup' onclick='myWriting()'>Show My Text</button>
+
+    <button id='date-popup' onclick='myDateFunction()'>Get the time!</button>
+
+    <p id="color-text">I am some text that will be a color. I enjoy changing color.</p>
+
+    <button id="color-btn" onclick="myColorChange()">Click Me for blue!</button>
+    
+    <button id="change-again" onclick="myColorChange2()">Change me to red!</button>
+    
+    <p class="styled-text" id="changeable-text-02">
+      Here is more text that we will try to change with JS.</p>
+    
+    <button id="color-btn-3" onclick="myStyleChange()">Click for new style!</button>
+        
+    <button id="reset-text" onclick="resetText()">
+      Reset
+      </button>
+
+<!-- this area creates a section with input field, label, and submit button --> 
+
+<div id="pet-area">
+    <label for="name-input" id="name-label">
+      Enter your pet name :
+    </label>
+    <input id="name-input"/>
+    <button id="name-submit" onclick="updatePetName()">
+    Submit Pet Name
+    </button>
+</div>
+
+
+  </body>
+</html>
